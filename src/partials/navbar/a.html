@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="translate-button">Translate to Mandarin</button>
+        <h1>Hi</h1>
+<script>
+  const translateButton = document.getElementById('translate-button');
+  const currentUrl = encodeURIComponent(window.location.href);
+  const targetLanguage = 'zh-CN'; // Mandarin language code
+
+  translateButton.addEventListener('click', () => {
+    const translateUrl = `https://translate.google.com/translate?hl=en&sl=auto&tl=${targetLanguage}&u=${currentUrl}`;
+    window.open(translateUrl, '_blank');
+  });
+</script>
+
+
+
+</body>
+</html>

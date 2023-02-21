@@ -1,1 +1,77 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Hello, world!</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Front Template -->
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+  </head>
+
+  <body>
+    <h1>Hello, world!</h1>
+<!-- Swiper -->
+<div class="js-swiper-navigation swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+      </div>
+      <div class="swiper-slide">
+        <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+      </div>
+      <div class="swiper-slide">
+        <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+      </div>
+      <div class="swiper-slide">
+        <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+      </div>
+      <div class="swiper-slide">
+        <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+      </div>
+      <div class="swiper-slide">
+        <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+      </div>
+    </div>
+  
+    <!-- Arrows -->
+    <div class="js-swiper-navigation-button-next"></div>
+    <div class="js-swiper-navigation-button-prev"></div>
+  </div>
+  <!-- End Swiper -->
+    <!-- JS Global Compulsory -->
+    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Front -->
+    <script src="./assets/js/hs.core.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+<!-- JS Plugins Init. -->
+<script>
+    (function() {
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var navigation = new Swiper('.js-swiper-navigation', {
+        navigation: {
+          nextEl: '.js-swiper-navigation-button-next',
+          prevEl: '.js-swiper-navigation-button-prev',
+        },
+      });
+    })()
+  </script>
+  </body>
+</html>
